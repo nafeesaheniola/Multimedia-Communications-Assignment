@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+}
+.grade {
+    width: 100%;
+}
+header p{
+    font-weight: 500;
+    font-size: x-large;
+    text-align: center;
+    line-height: 60px;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+audio, video {
+    margin-top: 20px;
+}
+
+footer {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+}
