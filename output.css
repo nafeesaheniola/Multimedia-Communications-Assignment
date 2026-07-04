@@ -1,84 +1,287 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
-    margin: 0;
-}
+  background: #111;
+  color: white;
+  margin: 0;
 
+}
+section{
+  padding: 5% 10%;
+}
+p{
+  line-height: 180%;
+}
 header {
-    text-align: center;
-    padding: 50px;
-    background: #222;
+  position: relative;
+  height: 100vh;
 }
-.image-container{
-    position: relative;
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
-.image-container img{
-    display: block;
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-.lasu{
-    width: 5%;
-    padding-bottom: 2rem;
-    border-radius: 1rem;
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
-.overlay-text{
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: 5rem;
+ .text h1 {
+  font-size: 4vw;
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
- p{
-    font-weight: 500;
-    font-size: x-large;
-    text-align: center;
-    line-height: 60px;
+.text p {
+  font-size: 2vw;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
 }
-table{
-    width: 100%;
+
+/* HEADER ENDS HERE */
+
+.introduction {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  margin: 5%;
+}
+.introduction img {
+  border-radius: 5%;
+} 
+ .content {
+  width: 70%;
+  background: #fff;
+  border-radius: 5%;
+  margin: auto;
+  padding: 2% 5%;
+  box-shadow: 0 0 2% rgba(0, 0, 0, 0.2);
+} 
+ .content h1 {
+  color: #333;
+  text-align: center;
+  font-size: 3.5vw;
+  font-family: "Playfair Display", serif;
+}
+.content p {
+  color: #333;
+  font-size: 1.5vw;
+  line-height: 180%;
+  text-align: justify;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+} 
+/* INTODUCTION DON END */
+
+/* STATICTICS */
+  
+/* TABLE STYLING */
+ .reality-hits h1{
+  font-size: 180%;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+.reality-hits p{
+          font-size: 120%;
+          text-align: center;
+          font-family:"Poppins", sans-serif;
+} 
+ table{
+    width: 80%;
     border-collapse: collapse;
-    margin-top: 20px;
-} th, td{
-    border: 1px solid #333;
-    padding: 10px;
+    margin: 5% auto;
     text-align: center;
-}
+    background: rgba(255, 255, 255,0.08); 
+    border-radius: 2%;
+   overflow: hidden;
+}  
 th{
-    background-color: #333;
-    color: white;
+  background: #1f3fa8;
+  color: white;
+  padding: 2%;
+  font-size: 120%;
 }
-.Statistics{
-    width: 50%;
-    padding-top: 30px;
+td{
+  padding: 2%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-section {
-    padding: 30px;
-    text-align: center;
+tr:nth-child(even){
+  background: rgb(225, 225, 225, 0.05);
+}
+tr:hover{
+  background: rgb(225, 225, 225, 0.1);
+}
+ 
+/* TABLE STYLING ENDS HERE */
+
+ .statistics {
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    gap: 2vw;
+    padding: 3vw;
+    align-items: center;
+}
+.statistics img{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 2%;
+  }
+.statistics h1{
+color: yellow;
+  text-align: center;
+  font-size: 3.5vw;
+  font-family: "Playfair Display", serif;
+}
+.statistics p{
+    color: #beb3b3;
+  font-size: 1.5vw;
+  line-height: 180%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+video{
+     width: 50%;
+}
+.video{
+  width: 50%;
+  text-align: center;
 }
 
-.grade{
-    width: 100%;
-    border-radius: 10px;
+/* AUDIO */
+audio{
+  width: 60%;
 }
-/* FIRST SECTION */
-.real-life{
-    font-weight: 500;
-    font-size: x-large;
-    text-align: center;
-    line-height: 60px;
-    
+.audio-section{
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+}
+.audio-h1{
+  text-align: center;
+  font-size: 2vw;
+  font-family: "Playfair Display", sans-serif;
+}
+.audio-p{
+  color:#beb3b3 ;
+  font-size: 1.5vw;
+  font-family: "Poppins", sans-serif;
+} 
+.conclusion{
+  font-size: 120%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+footer{
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+footer p{
+  margin: 0;
+  font-size: 120%;
+   font-family: "Poppins", sans-serif;
 }
 
-audio, video {
-    margin-top: 20px;
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .statistics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .introduction img{
+     width: 90%;
+    height: auto;
+    padding-bottom: 5%;
+  }
+  .statistics img{
+    width: 90%;
+    height: auto;
+  }
+  .statistics div{
+    width: 90%;
+    margin-top: 5%;
+  }
+  .audio-section h2{
+    font-size: 220%;
+  }
+  .statistics h1{
+    font-size:220%;
+  }
+  .statistics p{
+    font-size: 120%;
+     font-family: "Poppins", sans-serif;
+  }
+  table{
+    width: 95%;
+    font-size: 85%;
+  }
+  audio{
+    width: 90%;
+  }
+  .audio-section p{
+    font-size: 120%;
+     font-family: "Poppins", sans-serif;
+  }
+  .introduction h1{
+    font-size: 120%;
+  }
+  .introduction p{
+    font-size: 100%;
+     font-family: "Poppins", sans-serif;
+  }
+  footer{
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+footer p{
+  margin: 0;
+  font-size: 100%;
+   font-family: "Poppins", sans-serif;
+}
+video{
+  width: 90%;
+}
+.conclusion{
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
-footer {
-    background: #222;
-    padding: 20px;
-    text-align: center;
 }
