@@ -4,9 +4,6 @@ body {
   margin: 0;
 
 }
-p{
-  line-height: 180%;
-}
 header {
   position: relative;
   height: 100vh;
@@ -56,7 +53,7 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 2%;
   margin: 5%;
 }
 .introduction img {
@@ -66,7 +63,6 @@ header img {
   width: 70%;
   background: #fff;
   border-radius: 5%;
-  margin: auto;
   padding: 2% 5%;
   box-shadow: 0 0 2% rgba(0, 0, 0, 0.2);
 } 
